@@ -1,13 +1,9 @@
-import axios from 'axios';
-
-const apiBase = 'https://jsonplaceholder.typicode.com/';
-
-const getUrl = suffix => apiBase + suffix; 
+import {get} from './apiBase';
 
 export function fetchUser() {
-  return axios.get(getUrl('users'))
+  return get('users');
 }
 
 export function fetchUserDetails(id) {
-  return axios.get(`${getUrl('users')}/${id}`)
+  return get(`users/${id}`);
 }
