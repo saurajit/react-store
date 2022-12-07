@@ -15,7 +15,7 @@ export default function UserList() {
     <>
       <div>
         {userListStore.isPending ?
-          <div class="loader"></div> :
+          <div className="loader"></div> :
           userListStore.hasError ?
             <div>{userListStore.errorMessage}</div> :
             userListStore.users.length > 0 ?

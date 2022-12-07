@@ -14,7 +14,7 @@ export default function UserDetails() {
   return (
     <>
       {
-        userDetails.isPending ? <div class="loader"></div> :
+        userDetails.isPending ? <div className="loader"></div> :
           <div>
             <div>UserDetails</div>
             <div><Link to={'../users'}>Back</Link></div>
